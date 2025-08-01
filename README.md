@@ -102,4 +102,4 @@ ENTS was originally developed and maintained by the [jLab in Smart Sensing](http
 
 ---
 
-*This project is supported in part by USDA grants, university seed funding, and contributions from student researchers and domain science collaborators.*
+*This project is supported in part by UC Santa Cruz Agricultural Experiment Station funding provided by the state of California, Hatch Act of 1887 funding from the U.S. Department of Agriculture, National Institute of Food and Agriculture, and by the intramural research program of the U.S. Department of Agriculture, National Institute of Food and Agriculture, Hatch Funds (Accession number, 7010079). The Findings and Conclusions in This Preliminary Publication Have Not Been Formally Disseminated by the U. S. Department of Agriculture and Should Not Be Construed to Represent Any Agency Determination or Policy.*
