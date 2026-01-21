@@ -75,39 +75,13 @@ It is:
 
 ## Getting Started
 
-### Quick Start (For DirtViz Users)
+### For End Users
 
-Prerequisites: An assembled ENTS board with the latest firmware.
-
-1. After receiving your ENTS board, plug it into power. You can use a USB cable to connect the ENTS board's USB-C port to your computer or to a 5V >=500mA power supply (such as a phone charger).
-2. Upon bootup, the ENTS board will broadcast a WiFi hotspot named `ents-unconfigured`. Use your phone or computer to connect to this WiFi network.
-3. After connecting to the `ents-unconfigured` WiFi network, open a web browser and navigate to [192.168.4.1](http://192.168.4.1). This webpage is hosted by the ENTS board, and is used to configure the ENTS board for your use case.
-4. Fill out the form.
-  - Upload Settings
-    - Logger ID: In order for the logger's data to be accepted by the server, you must provide a valid Logger ID here.
-      - You can create a Logger ID on [DirtViz](https://dirtviz.jlab.ucsc.edu/) by logging in and navigating to your Loggers page. When creating the Logger, use the values provided to you for the DevEUI, JoinEUI, and AppKey.
-    - Cell ID: Specify which cell on DirtViz that this logger should upload data to.
-      - You can create a cell on [DirtViz](https://dirtviz.jlab.ucsc.edu/) and get its Cell ID by logging in and navigating to your Cells page.
-    - Upload Method: Choose between WiFi or LoRaWAN communication. LoRaWAN communication requires a nearby LoRaWAN gateway, so it is recommended to start with WiFi.
-    - Upload Interval: Time in seconds between uploads. Minimum recommended time is 10 seconds.
-  - Measurement Settings: In this section, check the box next to each sensor that you want to enable and connect to this ENTS board.
-    - If you are using voltage or current, you should also input the calibration values provided to you.
-  - WiFi Settings
-    - WiFi SSID: Name of the WiFi network to connect to.
-    - WiFi Password: Password for the WiFi network to connect to.
-      - Keep the "Use previous password" box unchecked so that the new password that you enter will be used instead!
-    - API Endpoint URL: Leave this as `http://dirtviz.jlab.ucsc.edu/api/sensor/`
-5. Click on the green `Save Configuration` button and follow the instructions to press the white `RST` button on the ENTS board near the USB port.
-
-<figure>
-  <img src="wifi user config cropped.png" alt="ENTS wifi user config" />
-  <figcaption><em>Figure 2:</em> For a duration after booting up, the ESP32 on the ENTS board broadcasts a wifi network for the purposes of letting the user wirelessly configure the device. The webpage hosted by the ESP32 is shown here.
-</figcaption>
-</figure>
+See [getting started for end users](getting_started_end_users.md).
 
 ### For Contributors
 
-For contributor-oriented getting started guides, please see the documentation available in the respective [hardware](https://github.com/jlab-sensing/ENTS-node-hardware), [firmware](https://github.com/jlab-sensing/ENTS-node-firmware), and [backend](https://github.com/jlab-sensing/ENTS-backend) repositories.
+For additional contributor-oriented getting started guides, please see the documentation available in the respective [hardware](https://github.com/jlab-sensing/ENTS-node-hardware), [firmware](https://github.com/jlab-sensing/ENTS-node-firmware), and [backend](https://github.com/jlab-sensing/ENTS-backend) repositories.
 
 ---
 
