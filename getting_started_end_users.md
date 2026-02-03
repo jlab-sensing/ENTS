@@ -7,11 +7,11 @@ Prerequisites: An assembled ENTS board with the [latest firmware](#how-to-check-
     <ul>
         <li>Keep this guide open in a window or tab.</li>
         <li>If you were provided with a spreadsheet containing the calibration values and other ENTS information, keep that open as well.</li>
-        <li>If you were not provided with a logger ID on your instance of [ents-backend](https://github.com/jlab-sensing/ENTS-backend), create a logger by logging in to your instance and navigating to your profile page's "Loggers" tab.</li>
+        <li>If you were not provided with a logger ID on your instance of <a href="https://github.com/jlab-sensing/ENTS-backend">ents-backend</a>, create a logger by logging in to your instance and navigating to your profile page's "Loggers" tab.</li>
         <ul>
-            <li>When creating the Logger, use the values provided to you for the DevEUI, JoinEUI, and AppKey (also visible during step 3 of the process to find out what [firmware version](#how-to-check-what-firmware-is-on-your-ents-board) you have). Take note of the Logger ID after you successfully create your logger, you will use it later.</li>
+            <li>When creating the Logger, use the values provided to you for the DevEUI, JoinEUI, and AppKey (also visible during step 3 of the process to find out what <a hre"#how-to-check-what-firmware-is-on-your-ents-board">firmware version</a> you have). Take note of the Logger ID after you successfully create your logger, you will use it later.</li>
         </ul>
-        <li>If you were not provided with a cell ID on your instance of [ents-backend](https://github.com/jlab-sensing/ENTS-backend), create a cell by logging in to your instance and navigating to your profile page's "Cells" tab.</li>
+        <li>If you were not provided with a cell ID on your instance of <a href="https://github.com/jlab-sensing/ENTS-backend">ents-backend</a>, create a cell by logging in to your instance and navigating to your profile page's "Cells" tab.</li>
         <ul>
             <li>You should give your cell a memorable name. The location and coordinates can be edited later, so you can enter in placeholder values if you are not sure (or do not want to use the map functionality). Take note of the Cell ID after you successfully create your cell, you will use it later.</li>
         </ul>
@@ -33,10 +33,10 @@ Prerequisites: An assembled ENTS board with the [latest firmware](#how-to-check-
 <p align="center" width="100%">
     <img src="ents wifi cropped.png" alt="ENTS wifi for configuration" width="50%"/>
     <br>
-    <em>Figure 2:</em> After powering on the ENTS board, connect to the wifi network it is broadcasting, then open a web browser to [192.168.4.1](http://192.168.4.1).
+    <em>Figure 2:</em> After powering on the ENTS board, connect to the wifi network it is broadcasting, then open a web browser to <a href="http://192.168.4.1">192.168.4.1</a>.
 </p>
 
-<li>After connecting to the ENTS' WiFi network, open a web browser and navigate to [192.168.4.1](http://192.168.4.1). This webpage is hosted locally by the ENTS board, and is used to configure the ENTS board for your use case.</li>
+<li>After connecting to the ENTS' WiFi network, open a web browser and navigate to <a href="http://192.168.4.1">192.168.4.1</a>. This webpage is hosted locally by the ENTS board, and is used to configure the ENTS board for your use case.</li>
 
 <li>Fill out the form on the webpage. Some details may already be filled in based on previous configurations to that ENTS board. Text which has a triangle next to it can be clicked on to show help text.</li>
     <ul>
