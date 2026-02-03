@@ -25,7 +25,7 @@ Prerequisites: An assembled ENTS board with the [latest firmware](#how-to-check-
     <em>Figure 1:</em> To power the ENTS board, use a USB cable to connect the board to a charger or a host device.
 </p>
 
-<li>Upon bootup, the ENTS board will broadcast a WiFi hotspot named `ents-` followed by its device address, which looks like 8 random letters and numbers (ex. `ents-06099AEA`). You can find your board's device address written on the back of the board in the white boxes. Use your phone or computer to connect to your board's WiFi network. The default password for initial configuration is `ilovedirt`.</li>
+<li>Upon bootup, the ENTS board will broadcast a WiFi hotspot named <code>ents-</code> followed by its device address, which looks like 8 random letters and numbers (ex. <code>ents-06099AEA</code>). You can find your board's device address written on the back of the board in the white boxes. Use your phone or computer to connect to your board's WiFi network. The default password for initial configuration is <code>ilovedirt</code>.</li>
     <ul>
     <li>It is recommended to uncheck any options to "remember this network" or "automatically connect" to avoid accidentally connecting to ENTS board's WiFi in the future. You can also manually forget the network after finishing the setup process in this guide.</li>
     <li>While you are connected to the ENTS' WiFi network, you will not have access to the broader internet.</li>
@@ -40,7 +40,7 @@ Prerequisites: An assembled ENTS board with the [latest firmware](#how-to-check-
 
 <li>Fill out the form on the webpage. Some details may already be filled in based on previous configurations to that ENTS board. Text which has a triangle next to it can be clicked on to show help text.</li>
     <ul>
-        <li>If you do not have a LoRaWAN gateway, make sure to select "WiFi" for the upload method.</li>
+        <li>If you do not have a LoRaWAN gateway, make sure to select <code>WiFi</code> for the upload method.</li>
     </ul>
 
 <p align="center" width="100%">
@@ -49,7 +49,7 @@ Prerequisites: An assembled ENTS board with the [latest firmware](#how-to-check-
     <em>Figure 3:</em> For a duration after booting up, the ESP32 on the ENTS board broadcasts a wifi network for the purposes of letting the user wirelessly configure the device. The webpage hosted by the ESP32 is shown here.
 </p>
 
-<li>Click on the green `Save Configuration` button and follow the instructions to press the white `RST` button near the USB port, closest to the corner.</li>
+<li>Click on the green <code>Save Configuration</code> button and follow the instructions to press the white <code>RST</code> button near the USB port, closest to the corner.</li>
 
 <li>On your host device, close the webpage and disconnect from the ENTS' WiFi network.</li>
 
