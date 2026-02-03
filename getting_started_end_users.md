@@ -12,32 +12,33 @@ Prerequisites: An assembled ENTS board with the [latest firmware](#how-to-check-
 
 1. After receiving your ENTS board, plug it into power. You can use a USB cable to connect the ENTS board's USB-C port to your computer or to a 5V >=500mA power supply (such as a phone charger).
 
-<figure>
-  <img src="ents power cropped.png" alt="ENTS power connection options" width="100%"/>
-  <figcaption><em>Figure 1:</em> To power the ENTS board, use a USB cable to connect the board to a charger or a host device.
-</figcaption>
-</figure>
+<p align="center" width="100%">
+    <img src="ents power cropped.png" alt="ENTS power connection options" width="50%"/>
+    <br>
+    <em>Figure 1:</em> To power the ENTS board, use a USB cable to connect the board to a charger or a host device.
+</p>
 
 2. Upon bootup, the ENTS board will broadcast a WiFi hotspot named `ents-` followed by its device address, which looks like 8 random letters and numbers (ex. `ents-06099AEA`). You can find your board's device address written on the back of the board in the white boxes. Use your phone or computer to connect to your board's WiFi network. The default password for initial configuration is `ilovedirt`.
     - It is recommended to uncheck any options to "remember this network" or "automatically connect" to avoid accidentally connecting to ENTS board's WiFi in the future. You can also manually forget the network after finishing the setup process in this guide.
     - While you are connected to the ENTS' WiFi network, you will not have access to the broader internet.
 
-<figure>
-  <img src="ents wifi cropped.png" alt="ENTS wifi for configuration" width="100%"/>
-  <figcaption><em>Figure 2:</em> After powering on the ENTS board, connect to the wifi network it is broadcasting, then open a web browser to [192.168.4.1](http://192.168.4.1).
-</figcaption>
-</figure>
+<p align="center" width="100%">
+    <img src="ents wifi cropped.png" alt="ENTS wifi for configuration" width="50%"/>
+    <br>
+    <em>Figure 2:</em> After powering on the ENTS board, connect to the wifi network it is broadcasting, then open a web browser to [192.168.4.1](http://192.168.4.1).
+</p>
+
 
 3. After connecting to the ENTS' WiFi network, open a web browser and navigate to [192.168.4.1](http://192.168.4.1). This webpage is hosted locally by the ENTS board, and is used to configure the ENTS board for your use case.
 
 4. Fill out the form on the webpage. Some details may already be filled in based on previous configurations to that ENTS board. Text which has a triangle next to it can be clicked on to show help text.
     - If you do not have a LoRaWAN gateway, make sure to select "WiFi" for the upload method.
 
-<figure>
-  <img src="wifi user config cropped.png" alt="ENTS wifi user config" />
-  <figcaption><em>Figure 3:</em> For a duration after booting up, the ESP32 on the ENTS board broadcasts a wifi network for the purposes of letting the user wirelessly configure the device. The webpage hosted by the ESP32 is shown here.
-</figcaption>
-</figure>
+<p align="center" width="100%">
+    <img src="wifi user config cropped.png" alt="ENTS wifi user config" width="50%"/>
+    <br>
+    <em>Figure 3:</em> For a duration after booting up, the ESP32 on the ENTS board broadcasts a wifi network for the purposes of letting the user wirelessly configure the device. The webpage hosted by the ESP32 is shown here.
+</p>
 
 5. Click on the green `Save Configuration` button and follow the instructions to press the white `RST` button near the USB port, closest to the corner.
 
@@ -47,19 +48,21 @@ Prerequisites: An assembled ENTS board with the [latest firmware](#how-to-check-
 
 8. Connect your ENTS board to the sensors that you have enabled.
     - To simultaneously take voltage and current readings, use the following configuration, where R is a 2 kOhm resistor:
-```
-(+) -----+----- [V+]
-         |      [V-]
-         +--R-- [I+]
-                [I-]
-(-) ----------- [GND]
-```
 
-<figure>
-  <img src="ents connect sensors cropped.png" alt="ENTS sensor connections" />
-  <figcaption><em>Figure 4:</em> The I2C and SDI-12 bus is exposed at the bottom of the board through the JST header and 3 position screw terminal. Voltage and current readings can be made through the 5 position screw terminal at the right.
-</figcaption>
-</figure>
+        ```
+        (+) -----+----- [V+]
+                 |      [V-]
+                 +--R-- [I+]
+                        [I-]
+        (-) ----------- [GND]
+        ```
+
+
+<p align="center" width="100%">
+    <img src="ents connect sensors cropped.png" alt="ENTS sensor connections" width="50%"/>
+    <br>
+    <em>Figure 4:</em> The I2C and SDI-12 bus is exposed at the bottom of the board through the JST header and 3 position screw terminal. Voltage and current readings can be made through the 5 position screw terminal at the right.
+</p>
 
 9. Reconnect your ENTS board to a power source.
 
