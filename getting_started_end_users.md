@@ -9,7 +9,7 @@ Prerequisites: An assembled ENTS board with the [latest firmware](#how-to-check-
         <li>If you were provided with a spreadsheet containing the calibration values and other ENTS information, keep that open as well.</li>
         <li>If you were not provided with a logger ID on your instance of <a href="https://github.com/jlab-sensing/ENTS-backend">ents-backend</a>, create a logger by logging in to your instance and navigating to your profile page's "Loggers" tab.</li>
         <ul>
-            <li>When creating the Logger, use the values provided to you for the DevEUI, JoinEUI, and AppKey (also visible during step 3 of the process to find out what <a hre"#how-to-check-what-firmware-is-on-your-ents-board">firmware version</a> you have). Take note of the Logger ID after you successfully create your logger, you will use it later.</li>
+            <li>When creating the Logger, use the values provided to you for the DevEUI, JoinEUI, and AppKey (also visible during step 3 of the process to find out what <a href="#how-to-check-what-firmware-is-on-your-ents-board">firmware version</a> you have). Take note of the Logger ID after you successfully create your logger, you will use it later.</li>
         </ul>
         <li>If you were not provided with a cell ID on your instance of <a href="https://github.com/jlab-sensing/ENTS-backend">ents-backend</a>, create a cell by logging in to your instance and navigating to your profile page's "Cells" tab.</li>
         <ul>
