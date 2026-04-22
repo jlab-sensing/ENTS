@@ -21,7 +21,8 @@ ENTS supports researchers and practitioners across environmental sciences, agroe
 | ⚙️ **Firmware**  | [ENTS-node-firmware](https://github.com/jlab-sensing/ENTS-node-firmware) | C firmware for STM32/ESP32-based ENTS nodes |
 | 🌐 **Backend**   | [ENTS-backend](https://github.com/jlab-sensing/ENTS-backend) | Flask API, data visualization, and live monitoring tools |
 
-> **📖 Relevant papers**:  
+> **📖 Relevant papers**:
+> - [ENTS: Experiences in Co-Designed Environmental Sensing, SenSys 2026 (PDF)](https://sensors.soe.ucsc.edu/assets/pdf/ENTS_Design_Paper_2025.pdf)
 > - [Hardware to enable large-scale deployment and observation of soil microbial fuel cells, ENSsys 2022 (PDF)](https://dl.acm.org/doi/pdf/10.1145/3560905.3568110)
 > - [Hardware to unleash novel energy sources for outdoor sensor networks, SenSys 2025 Demo Abstract (PDF)](https://sensors.soe.ucsc.edu/assets/pdf/2025_SenSys_ENTS_Demo_Abstract.pdf)
 > &nbsp;
