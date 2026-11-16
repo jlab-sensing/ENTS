@@ -1,0 +1,51 @@
+[project]
+site_name = "ENTS: Environmental NeTworked Sensing"
+site_description = "Central landing page and system documentation for the ENTS open-source environmental sensing ecosystem."
+site_url = "https://jlab-sensing.github.io/ENTS/"
+site_author = "jLab at UC Santa Cruz"
+copyright = "&copy; 2026 jLab Sensing, UC Santa Cruz"
+repo_url = "https://github.com/jlab-sensing/ENTS"
+docs_dir = "docs"
+site_dir = "site"
+
+nav = [
+    { "Home" = "index.md" },
+    { "Roadmap" = "roadmap.md" },
+    { "User Guide" = [
+        "users/index.md",
+        { "DirtViz Web Platform" = "users/dirtviz.md" },
+        { "Hardware Setup and Wiring" = "users/hardware-setup.md" },
+        { "Captive Portal Configuration" = "users/captive-portal.md" },
+        { "Diagnostics and LEDs" = "users/diagnostics.md" }
+    ]},
+    { "Developer Hub" = [
+        "developers/index.md",
+        { "System Architecture" = "developers/architecture.md" },
+        { "Repository Directory and Source Map" = "developers/repositories.md" },
+        { "Contributing and Community" = "developers/contributing.md" }
+    ]},
+    { "Community and Research" = [
+        { "Zulip Community" = "community/zulip.md" },
+        { "Publications and Papers" = "community/publications.md" }
+    ]}
+]
+
+[project.theme]
+variant = "modern"
+logo = "assets/images/logo.svg"
+favicon = "assets/images/favicon.png"
+language = "en"
+features = [
+    "navigation.instant",
+    "navigation.tabs",
+    "navigation.sections",
+    "navigation.top",
+    "search.suggest",
+    "search.highlight",
+    "content.code.copy",
+    "content.action.edit",
+]
+
+[project.extra]
+zulip_url = "https://ents.zulipchat.com/"
+dirtviz_live_url = "https://dirtviz.jlab.ucsc.edu/"

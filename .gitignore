@@ -1,0 +1,12 @@
+# Zensical build output
+site/
+.cache/
+
+# Python virtual environment & cache
+.venv/
+__pycache__/
+*.pyc
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
