@@ -60,4 +60,8 @@ The documentation portal is organized into two primary user pathways:
 
 ## Funding Acknowledgements
 
-This project is supported in part by UC Santa Cruz Agricultural Experiment Station funding provided by the state of California, Hatch Act of 1887 funding from the U.S. Department of Agriculture, National Institute of Food and Agriculture, and by the intramural research program of the U.S. Department of Agriculture, National Institute of Food and Agriculture, Hatch Funds (Accession number: 7010079).
+This project and open-source ecosystem are supported in part by:
+
+* **National Science Foundation (NSF)**: Pathways to Enable Open-Source Ecosystems (POSE) program.
+* **UC Santa Cruz Agricultural Experiment Station**: Funding provided by the state of California.
+* **U.S. Department of Agriculture (USDA), National Institute of Food and Agriculture (NIFA)**: Hatch Act of 1887 funding (Accession number: 7010079).

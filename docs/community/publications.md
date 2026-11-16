@@ -82,8 +82,9 @@ Soil microbial fuel cells (SMFCs) represent a promising zero-maintenance energy 
 
 ## Grant and Funding Acknowledgements
 
-This research is supported in part by:
+This research and ecosystem are supported in part by:
 
+* **National Science Foundation (NSF)**: Pathways to Enable Open-Source Ecosystems (POSE) program.
 * **UC Santa Cruz Agricultural Experiment Station**: Funding provided by the State of California.
 * **U.S. Department of Agriculture (USDA), National Institute of Food and Agriculture (NIFA)**: Hatch Act of 1887 funding (Accession number: `7010079`).
 

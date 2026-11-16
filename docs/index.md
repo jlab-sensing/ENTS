@@ -117,3 +117,13 @@ ENTS is an open-source collaboration developed by the [jLab in Smart Sensing](ht
 
 * **Discussion and Chat**: Join the conversation on the [ENTS Zulip Chat](https://ents.zulipchat.com/).
 * **Source Repositories**: Browse all ecosystem repositories in the [Repository Directory](developers/repositories.md).
+
+---
+
+## Funding Acknowledgements
+
+This project and open-source ecosystem are supported in part by:
+
+* **National Science Foundation (NSF)**: Pathways to Enable Open-Source Ecosystems (POSE) program.
+* **UC Santa Cruz Agricultural Experiment Station**: Funding provided by the State of California.
+* **U.S. Department of Agriculture (USDA), National Institute of Food and Agriculture (NIFA)**: Hatch Act of 1887 funding (Accession number: 7010079).
