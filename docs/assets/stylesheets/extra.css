@@ -1,0 +1,67 @@
+/* Enhanced figure and diagram styling for maximum readability */
+
+figure {
+  text-align: center;
+  margin: 2em auto;
+}
+
+figure img {
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 0.8em;
+  font-size: 0.85em;
+  line-height: 1.45;
+  color: var(--md-default-fg-color--light);
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Phone / mobile webform screenshots */
+.figure-mobile img {
+  max-width: 440px;
+}
+
+/* Hardware board closeups */
+.figure-hardware img {
+  max-width: 580px;
+}
+
+/* Wide system overview figures */
+.figure-wide img {
+  max-width: 100%;
+}
+
+/* Prominent callout box for DirtViz live platform */
+.dirtviz-spotlight {
+  background: var(--md-code-bg-color);
+  border: 2px solid var(--md-primary-fg-color);
+  border-radius: 8px;
+  padding: 1.25em 1.5em;
+  margin: 1.75em 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.dirtviz-spotlight h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: var(--md-primary-fg-color);
+}
+
+.dirtviz-spotlight p {
+  margin-bottom: 1em;
+}
+
+.dirtviz-spotlight .button-group {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
