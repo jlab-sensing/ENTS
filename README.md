@@ -10,13 +10,13 @@ Co-designed with domain scientists, ENTS provides an end-to-end open-source hard
 
 The primary documentation for the ENTS ecosystem is published at:
 
-**[https://jlab-sensing.github.io/ENTS/](https://jlab-sensing.github.io/ENTS/)**
+**[https://jlab-sensing.github.io/](https://jlab-sensing.github.io/)**
 
 The documentation portal is organized into two primary user pathways:
 
-* **[User Guide](https://jlab-sensing.github.io/ENTS/users/)**: End-to-end deployment instructions, DirtViz dashboard operations, board power and wiring, and on-device WiFi captive portal configuration.
-* **[Developer Hub](https://jlab-sensing.github.io/ENTS/developers/)**: System architecture, end-to-end dataflow, and repository directory linking all source code across the ecosystem.
-* **[Project Roadmap](https://jlab-sensing.github.io/ENTS/roadmap/)**: The evolutionary path from current production firmware (Bare Metal STM32 HAL) to the next-generation modular architecture (TockOS).
+* **[User Guide](https://jlab-sensing.github.io/users/)**: End-to-end deployment instructions, DirtViz dashboard operations, board power and wiring, and on-device WiFi captive portal configuration.
+* **[Developer Hub](https://jlab-sensing.github.io/developers/)**: System architecture, end-to-end dataflow, and repository directory linking all source code across the ecosystem.
+* **[Project Roadmap](https://jlab-sensing.github.io/roadmap/)**: The evolutionary path from current production firmware (Bare Metal STM32 HAL) to the next-generation modular architecture (TockOS).
 
 ---
 
