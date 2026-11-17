@@ -1,7 +1,7 @@
 [project]
 site_name = "ENTS: Environmental NeTworked Sensing"
 site_description = "Central landing page and system documentation for the ENTS open-source environmental sensing ecosystem."
-site_url = "https://jlab-sensing.github.io/"
+site_url = "https://jlab-sensing.github.io/ENTS/"
 site_author = "jLab at UC Santa Cruz"
 copyright = "&copy; 2026 jLab Sensing, UC Santa Cruz"
 repo_url = "https://github.com/jlab-sensing/ENTS"
