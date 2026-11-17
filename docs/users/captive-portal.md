@@ -11,7 +11,10 @@ During initial boot, the ENTS board's onboard ESP32 co-processor broadcasts a te
 3. On your computer or mobile phone, open the available WiFi network list.
 4. Locate the network named `ents-` followed by the 8-character device identifier (for example, `ents-06099AEA`). This identifier matches the MAC address printed on the white silkscreen label on the back of the PCB.
 
-![ENTS WiFi configuration network](../assets/images/ents_wifi.png)
+<figure class="figure-hardware">
+  <img src="../assets/images/ents_wifi.png" alt="Connecting to the ENTS WiFi access point on a mobile phone" />
+  <figcaption><strong>Figure 1:</strong> Locating and connecting to the ENTS board's configuration WiFi hotspot (<code>ents-XXXXXXXX</code>) from a phone or computer.</figcaption>
+</figure>
 
 5. Connect to the network. The default password is:
    ```text
@@ -30,7 +33,10 @@ During initial boot, the ENTS board's onboard ESP32 co-processor broadcasts a te
    ```
 3. The embedded configuration portal will load:
 
-![ENTS WiFi configuration web portal](../assets/images/wifi_user_config.png)
+<figure class="figure-mobile">
+  <img src="../assets/images/wifi_user_config.png" alt="ENTS web configuration portal form hosted at 192.168.4.1" />
+  <figcaption><strong>Figure 2:</strong> The embedded web configuration page hosted by the ESP32 at <code>http://192.168.4.1</code>. Use this form to assign your Logger ID, Cell ID, measurement frequencies, and upload method (WiFi or LoRaWAN).</figcaption>
+</figure>
 
 ---
 

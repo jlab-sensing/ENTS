@@ -8,7 +8,10 @@ This document describes how to power the ENTS sensing node, connect digital and 
 
 The ENTS sensor board can be powered through either USB-C or a dedicated external battery connector.
 
-![ENTS power connection options](../assets/images/ents_power.png)
+<figure class="figure-hardware">
+  <img src="../assets/images/ents_power.png" alt="ENTS power connection options and power switch" />
+  <figcaption><strong>Figure 1:</strong> Powering the ENTS node. Connect via the USB-C port (left) to a 5V charger or host computer, or connect a 3.7V battery to header J9. Ensure the slide switch is in the UP position (toward the board edge) to power on.</figcaption>
+</figure>
 
 ### Power Options
 
@@ -23,7 +26,10 @@ When powering on the board, ensure the power slide switch is in the **ON** posit
 
 The ENTS board provides screw terminals and digital headers along the bottom and right edges of the PCB.
 
-![ENTS sensor connections](../assets/images/ents_connect_sensors.png)
+<figure class="figure-hardware">
+  <img src="../assets/images/ents_connect_sensors.png" alt="ENTS sensor connection screw terminals and headers" />
+  <figcaption><strong>Figure 2:</strong> Sensor interfaces on the ENTS board. The 3-position screw terminal and JST header at the bottom expose the SDI-12 and I2C buses. The 5-position screw terminal at the right connects to the differential analog voltage and current sensing channels.</figcaption>
+</figure>
 
 ### Digital Interfaces (Bottom Edge)
 
@@ -45,12 +51,13 @@ The 5-position screw terminal on the right side of the board connects to the pre
 To simultaneously measure voltage and current across an energy-harvesting cell (such as a soil microbial fuel cell) using a shunt resistor $R = 2\text{ k}\Omega$:
 
 ```text
-(+) -----+----- [V+]
-         |      [V-]
-         +--R-- [I+]
-                [I-]
-(-) ----------- [GND]
+(+) Positive Lead ---+-------------------------> [V+] Terminal
+                     |                          [V-] Terminal
+                     +----[ 2 kΩ Resistor ]----> [I+] Terminal
+                                                [I-] Terminal
+(-) Negative Lead -----------------------------> [GND] Terminal
 ```
+<figcaption style="margin-top: 0.5em; text-align: center; font-size: 0.85em; color: var(--md-default-fg-color--light);"><strong>Figure 3:</strong> Circuit wiring for simultaneous differential voltage and current sensing across a single power source using a 2 kΩ shunt resistor.</figcaption>
 
 ### Terminal Definitions
 

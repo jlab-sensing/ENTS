@@ -28,6 +28,7 @@ flowchart TD
 
     Current -.->|Architectural Transition| Future
 ```
+<figcaption style="margin-top: 0.5em; text-align: center; font-size: 0.85em; color: var(--md-default-fg-color--light);"><strong>Figure 1:</strong> Architectural roadmap from the production monolithic STM32 HAL bare-metal firmware to the next-generation memory-safe TockOS microkernel and isolated userspace sensing applications.</figcaption>
 
 ### 1. Current Production Firmware: Bare Metal (STM32 HAL)
 

@@ -43,6 +43,7 @@ sequenceDiagram
     B-->>NF: Return current readings
     NF->>NF: Execute closed-loop irrigation decision
 ```
+<figcaption style="margin-top: 0.5em; text-align: center; font-size: 0.85em; color: var(--md-default-fg-color--light);"><strong>Figure 1:</strong> End-to-end telemetry sequence from physical sensor sampling, Protocol Buffers packing, and dual wireless routing to database commit and downstream automation consumption (NodeFlow).</figcaption>
 
 ---
 

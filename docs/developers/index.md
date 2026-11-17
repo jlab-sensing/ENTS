@@ -41,6 +41,7 @@ flowchart TD
     RepoMap -->|Direct Link| DV_Repo
     RepoMap -->|Direct Link| NF_Repo
 ```
+<figcaption style="margin-top: 0.5em; text-align: center; font-size: 0.85em; color: var(--md-default-fg-color--light);"><strong>Figure 1:</strong> Architectural mapping from the central documentation portal to the individual subsystem repositories.</figcaption>
 
 ---
 

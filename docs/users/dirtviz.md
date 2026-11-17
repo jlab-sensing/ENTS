@@ -45,6 +45,11 @@ DirtViz separates the **physical sensing location** (Cell) from the **hardware d
 
 ## 3. Visualizing Sensor Telemetry
 
+<figure class="figure-wide">
+  <img src="../assets/images/dirtviz_dashboard.png" alt="DirtViz interactive sensor telemetry dashboard" />
+  <figcaption><strong>Figure 1:</strong> DirtViz dashboard view. The navigation bar provides date range filters and live streaming controls, the map plots deployment cells, and the interactive charts plot multi-channel sensor telemetries in real time.</figcaption>
+</figure>
+
 ### Dashboard Controls
 
 1. From the main dashboard, select your **Cell** from the dropdown menu or click its pin on the interactive map.

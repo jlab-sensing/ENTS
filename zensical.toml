@@ -7,6 +7,7 @@ copyright = "&copy; 2026 jLab Sensing, UC Santa Cruz"
 repo_url = "https://github.com/jlab-sensing/ENTS"
 docs_dir = "docs"
 site_dir = "site"
+extra_css = ["assets/stylesheets/extra.css"]
 
 nav = [
     { "Home" = "index.md" },

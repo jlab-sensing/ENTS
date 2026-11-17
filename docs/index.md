@@ -6,6 +6,28 @@ Co-designed with domain scientists at UC Santa Cruz, ENTS supports researchers a
 
 ---
 
+## Live Cloud Platform: DirtViz
+
+The central cloud visualization and monitoring service for the ENTS ecosystem is live at **[dirtviz.jlab.ucsc.edu](https://dirtviz.jlab.ucsc.edu/)**.
+
+<div class="dirtviz-spotlight">
+  <h3>Operational Cloud Service: DirtViz</h3>
+  <p>
+    DirtViz is the production data ingestion and visualization platform for ENTS. It aggregates live measurements from outdoor sensor nodes, dynamically renders time-series graphs, and provides public and authenticated access to environmental datasets for research.
+  </p>
+  <div class="button-group">
+    <a href="https://dirtviz.jlab.ucsc.edu/" class="md-button md-button--primary" target="_blank" rel="noopener">Open Live DirtViz Platform &rarr;</a>
+    <a href="users/dirtviz.md" class="md-button">DirtViz User Guide &rarr;</a>
+  </div>
+</div>
+
+<figure class="figure-wide">
+  <img src="assets/images/dirtviz_dashboard.png" alt="DirtViz interactive web dashboard" />
+  <figcaption><strong>Figure 1:</strong> The DirtViz web dashboard presents live interactive plots from field-deployed ENTS sensing nodes, with custom time-range filtering, streaming modes, and CSV export capabilities.</figcaption>
+</figure>
+
+---
+
 ## Getting Started
 
 Select the pathway that matches your goals:
@@ -34,28 +56,35 @@ Select the pathway that matches your goals:
 
 ## System Overview
 
-The ENTS platform connects physical environmental sensors to researchers through a modular hardware, firmware, and cloud data pipeline.
+The ENTS platform connects physical environmental sensors to researchers through an integrated hardware, firmware, and cloud data pipeline.
+
+<figure class="figure-wide">
+  <img src="assets/images/ENTS_overview.png" alt="ENTS end-to-end sensing ecosystem overview diagram" />
+  <figcaption><strong>Figure 2:</strong> End-to-end system overview of the ENTS ecosystem. Field-deployed hardware nodes (left) collect precision electrical and environmental telemetry, which is transmitted via LoRaWAN or WiFi into the DirtViz cloud backend and React frontend (right).</figcaption>
+</figure>
+
+### Architecture Dataflow
 
 ```mermaid
 flowchart LR
-    subgraph SensingNode ["ENTS Sensor Node"]
+    subgraph SensingNode ["1. ENTS Sensing Node"]
         direction TB
-        Sensors["Sensors<br/>(Analog, SDI-12, I2C)"]
-        Board["ENTS Node Hardware<br/>(Wio-E5 STM32 + ESP32)"]
-        Sensors --> Board
+        Sensors["Sensors<br/>Differential V/I, SDI-12, I2C"]
+        Board["Node Hardware<br/>STM32WLE5 + ESP32-C3"]
+        Sensors -->|Analog / Digital| Board
     end
 
-    subgraph Transmission ["Wireless Ingestion"]
+    subgraph Transmission ["2. Wireless Telemetry"]
         direction TB
-        WiFi["WiFi / Direct HTTP"]
-        LoRa["LoRaWAN / The Things Network"]
+        WiFi["WiFi / Direct HTTP<br/>Local Lab Network"]
+        LoRa["LoRaWAN Telemetry<br/>The Things Network"]
     end
 
-    subgraph Cloud ["Cloud Platform"]
+    subgraph Cloud ["3. DirtViz Cloud Service"]
         direction TB
-        DirtViz["DirtViz Ingestion API<br/>(Flask + PostgreSQL)"]
-        WebUI["DirtViz Web Interface<br/>(React Dashboard)"]
-        API["External Integrations<br/>(e.g., NodeFlow)"]
+        DirtViz["Ingestion REST API<br/>Flask + PostgreSQL"]
+        WebUI["Web Interface<br/>React Dashboard"]
+        API["Downstream API Consumers<br/>e.g., NodeFlow Automation"]
         DirtViz --> WebUI
         DirtViz --> API
     end
@@ -65,6 +94,7 @@ flowchart LR
     WiFi --> DirtViz
     LoRa --> DirtViz
 ```
+<figcaption style="margin-top: 0.5em; text-align: center; font-size: 0.85em; color: var(--md-default-fg-color--light);"><strong>Figure 3:</strong> High-level data ingestion flow from sensing hardware through dual wireless networks into DirtViz and external automation systems.</figcaption>
 
 ---
 
