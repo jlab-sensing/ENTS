@@ -9,26 +9,26 @@ This document outlines the architectural roadmap for the ENTS ecosystem, clarify
 The ENTS firmware ecosystem is transitioning from a monolithic bare-metal implementation to a modern, modular embedded operating system.
 
 ```mermaid
-flowchart TD
+flowchart LR
     subgraph Current ["Current Production Architecture"]
         direction TB
-        BM_Core["Bare Metal Firmware (soil-power-sensor-firmware)"]
-        BM_Stack["C + STM32 HAL (PlatformIO)"]
-        BM_ESP["ESP32 Co-Processor (WiFi Captive Portal)"]
-        BM_Core --- BM_Stack
-        BM_Core --- BM_ESP
+        BM_Title["soil-power-sensor-firmware<br/><b>Bare Metal (STM32 HAL)</b>"]
+        BM_Stack["Monolithic C Firmware<br/>• STM32 HAL (Sensing & LoRaWAN)<br/>• ESP32 WiFi Captive Portal"]
+        BM_Feat["• Direct hardware registers<br/>• Ultra-low sleep power<br/>• Field-tested in multi-year deployments"]
+        BM_Title --> BM_Stack --> BM_Feat
     end
 
     subgraph Future ["Future Architecture (TockOS)"]
         direction TB
-        TK_Kernel["TockOS Kernel (jlab-sensing/tock)<br/>• Rust Microkernel<br/>• Hardware Memory Protection (MPU)<br/>• Fault-Tolerant Scheduling"]
-        TK_Apps["Userspace Sensor Applications (jlab-sensing/ENTS-tock)<br/>• Sandboxed Processes via libtock-c<br/>• Isolated Crash Recovery<br/>• Dynamic Process Management (tockloader)"]
-        TK_Kernel --> TK_Apps
+        TK_Title["TockOS Ecosystem<br/><b>Modular Embedded OS</b>"]
+        TK_Stack["Rust Microkernel + C Apps<br/>• jlab-sensing/tock (Kernel)<br/>• jlab-sensing/ENTS-tock (Apps)"]
+        TK_Feat["• Hardware MPU memory protection<br/>• Isolated process crash recovery<br/>• Dynamic loading via tockloader"]
+        TK_Title --> TK_Stack --> TK_Feat
     end
 
-    Current -.->|Architectural Transition| Future
+    Current ==>|Architectural<br/>Transition| Future
 ```
-<figcaption style="margin-top: 0.5em; text-align: center; font-size: 0.85em; color: var(--md-default-fg-color--light);"><strong>Figure 1:</strong> Architectural roadmap from the production monolithic STM32 HAL bare-metal firmware to the next-generation memory-safe TockOS microkernel and isolated userspace sensing applications.</figcaption>
+<figcaption style="margin-top: 0.75em; text-align: center; font-size: 0.85em; color: var(--md-default-fg-color--light);"><strong>Figure 1:</strong> Architectural roadmap comparing the current production bare-metal STM32 HAL firmware to the future modular TockOS architecture with memory-isolated userspace sensing processes.</figcaption>
 
 ### 1. Current Production Firmware: Bare Metal (STM32 HAL)
 
